@@ -28,5 +28,5 @@ jobs:
           cd dist
           git init
           git add -A
-          git commit -m "🚀 Deploy id crypto-price"
-          git push -f "https://github.com/ReginalFFon/crypto-price-view.git" master:main
+          git commit -m "🚀 Deploy id ${GITHUB_RUN_ID}"
+          git push -f "https://github.com/${GITHUB_REPOSITORY}.git" master:main
